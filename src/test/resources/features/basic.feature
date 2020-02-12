@@ -10,7 +10,6 @@ Feature: Basic Feature
     When I eat 5 cucumbers
     Then I should have 15 cucumbers
 
-
   Scenario Outline: eat <eat> out of <of>
     Given there are <of> cucumbers
     When I eat <eat> cucumbers
