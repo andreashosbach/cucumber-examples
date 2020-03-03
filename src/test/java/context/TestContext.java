@@ -1,14 +1,12 @@
 package context;
 
+import business.CucumberJar;
+
 public class TestContext {
 
-    private int cucumberCount;
+    private CucumberJar cucumberJar = new CucumberJar();
 
-    public void setCucumberCount(int cucumberCount){
-        this.cucumberCount = cucumberCount;
-    }
-
-    public int getCucumberCount() {
-        return cucumberCount;
+    public CucumberJar getCucumberJar(){
+        return cucumberJar;
     }
 }
