@@ -1,6 +1,7 @@
 package step_definitions;
 
 import context.TestContext;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -33,5 +34,15 @@ public class EatingStepDefs {
     @Then("I should have {int} cucumbers")
     public void i_should_have_cucumbers(int arg0) {
         assertEquals(arg0, testContext.getCucumberJar().getCucumbers());
+    }
+
+    @And("I should be full")
+    public void iShouldBeFull() {
+        //TODO
+    }
+
+    @And("I should be hungry")
+    public void iShouldBeHungry() {
+        //TODO
     }
 }
